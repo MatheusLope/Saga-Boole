@@ -38,7 +38,9 @@ Cadastrar credenciais
 ● Criar uma nova branch
 (Nomenclatura Feature[ Dev/Doc ]/[ Oque está implementando ]-[ Nome ])
 > git checkout -b FeatureDev/Plataforma-Jordan (Exemplo)
+
 > git checkout -b FeatureDoc/GDDStoryboard-Jordan (Exemplo)
+
 > git checkout -b FeatureArte/ConceptPersonagem-Jordan (Exemplo)
 
 Após fazer alterações no projeto
@@ -50,6 +52,7 @@ para o commit. Os arquivos em vermelho não irão.
 
 Caso não deseje fazer o commit em um arquivo específico utilizar o comando
 > git checkout -- assets/script/player/skills.cs
+
 > git checkout -- . (Tira todos os arquivos do Commit - Todos ficarão vermelho)
 
 Logo após commitar as alterações
