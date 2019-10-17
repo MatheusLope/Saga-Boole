@@ -30,8 +30,9 @@ Clonar repositório
 Entrar na pasta do repositório
 > cd <nome_da_pasta>
 
-Cadastrar credenciais (Máquina pessoal)
+Cadastrar credenciais
 > git config --global user.email "email@email.com"
+
 > git config --global user.name "nome"
 
 ● Criar uma nova branch
