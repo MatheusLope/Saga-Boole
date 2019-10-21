@@ -8,6 +8,8 @@ public class moveOffset : MonoBehaviour
     private Material materialAtual;
     public float velocidade;
     private float offset;
+
+    public GameObject pause;
     
 
     void Start()
@@ -20,5 +22,13 @@ public class moveOffset : MonoBehaviour
         offset += 0.001f;
 
         materialAtual.SetTextureOffset("_MainTex", new Vector2(offset * velocidade, 0));
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            pause.SetActive(true);
+        }
     }
 }
