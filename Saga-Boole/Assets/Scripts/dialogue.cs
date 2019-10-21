@@ -13,7 +13,13 @@ public class dialogue : MonoBehaviour
 
     private int selected;
     private string str;
- 
+
+    [SerializeField] GameObject dragDropCanvas;
+
+    private void Awake()
+    {
+        dragDropCanvas.SetActive(false);
+    }
     void Start()
     {
        anim = GetComponent<Animator>();
@@ -45,6 +51,7 @@ public class dialogue : MonoBehaviour
         anim.SetTrigger("close");
         str = "";
         txt.text = "";
+        dragDropCanvas.SetActive(true);
     }
     public void loadLetters()
     {
