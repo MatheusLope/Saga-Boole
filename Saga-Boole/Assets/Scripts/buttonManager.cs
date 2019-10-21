@@ -13,11 +13,13 @@ public class buttonManager : MonoBehaviour
     }
     public void carregaCena(string cena)
     {
+        StartCoroutine(delay());
         SceneManager.LoadScene(cena);
     }
 
     public void sair()
     {
+        StartCoroutine(delay());
         Application.Quit();
     }
 
@@ -33,5 +35,10 @@ public class buttonManager : MonoBehaviour
             canvas.SetActive(true);
             isActive = true;
         }
+    }
+
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(0.5f);
     }
 }
